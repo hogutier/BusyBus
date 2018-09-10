@@ -5,12 +5,8 @@
 }
 
 body {
-  display: flex;
+  display: block;
   width: 100%;
-  flex-wrap: no-wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: flex-start;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   background-color: #ffffff;
@@ -18,20 +14,20 @@ body {
 
 header {
   display: flex;
-  width: 90%;
-
+  width: 100%;
   background-color: #1F79F9;
   justify-content: center;
 }
 
 div.nav1 {
   width: 10%;
-  margin: 20px;
+  margin: 30px;
   color: #ffffff;
   float: left;
-  font-size: 2em;
+  font-size: 3.4em;
   flex-grow: 1;
   flex-shrink: 1;
+  text-align: center;
 }
 
 div.nav2 {
@@ -39,7 +35,7 @@ div.nav2 {
   margin: 20px;
   color: #ffffff;
   float: center;
-  font-size: 2em;
+  font-size: 3.4em;
   align-self: center;
   flex-grow: 1;
   flex-shrink: 1;
@@ -51,7 +47,57 @@ div.nav3 {
   margin: 20px;
   color: #ffffff;
   float: center;
-  font-size: 2em;
+  font-size: 3.4em;
   flex-grow: 1;
   flex-shrink: 1;
+  text-align: center;
+}
+
+div.favorites {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.25em;
+  margin: 30px auto;
+  color: #757575;
+}
+
+div.list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  font-size: 1.5em;
+  width: 70%;
+}
+
+span {
+  display: inline-block;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+
+.chevron-right {
+  width: 20px;
+  align-self: center;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Tablet screens and larger */
+@media screen and (min-width: 575px) {
+
+}
+
+/* Laptop screens and larger */
+@media screen and (min-width: 991px) {
+
 }
