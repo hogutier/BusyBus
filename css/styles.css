@@ -1,0 +1,57 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+header {
+  display: flex;
+  width: 90%;
+
+  background-color: #1F79F9;
+  justify-content: center;
+}
+
+div.nav1 {
+  width: 10%;
+  margin: 20px;
+  color: #ffffff;
+  float: left;
+  font-size: 2em;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+div.nav2 {
+  width: 80%;
+  margin: 20px;
+  color: #ffffff;
+  float: center;
+  font-size: 2em;
+  align-self: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+}
+
+div.nav3 {
+  width: 10%;
+  margin: 20px;
+  color: #ffffff;
+  float: center;
+  font-size: 2em;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
