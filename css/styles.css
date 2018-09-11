@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  display: flex;
+  justify-content: center;
+}
+
 body {
   display: block;
-  width: 100%;
+  width: 75%;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -20,6 +25,7 @@ header {
   width: 100%;
   background-color: #1F79F9;
   justify-content: center;
+  align-items: center;
   height: 10vh;
   position: fixed;
   z-index: 10;
@@ -78,7 +84,8 @@ div.favorites {
   display: flex;
   position: fixed;
   background-color: white;
-  top: 90px;
+  top: 60px;
+  left: 0px;
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -88,6 +95,11 @@ div.favorites {
   color: #757575;
   height: 10vh;
   z-index: 10;
+}
+
+.favh2 {
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 div > i {
@@ -133,13 +145,43 @@ h3 {
   font-size: 3.4em;
 }
 
+/* Laptop screens and larger */
+@media screen and (max-width: 991px) {
+  div.nav {
+    font-size: 2.25em;
+  }
+  div.favorites {
+    font-size: 1.5em;
+    top: 60px;
+  }
+  div.list {
+    font-size: 1.25em;
+    width: 90%;
+  }
+  .bottom-nav {
+    font-size: 2.25em;
+  }
+}
 
 /* Tablet screens and larger */
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
+  body {
+    width: 90%
+  }
+  div.nav {
+    font-size: 1.75em;
+  }
+  div.favorites {
+    font-size: 1.5em;
+    top: 60px;
+  }
+  div.list {
+    font-size: 1em;
+    width: 90%;
+  }
+  .bottom-nav {
+    font-size: 1.75em;
+  }
 
-}
 
-/* Laptop screens and larger */
-@media screen and (min-width: 991px) {
 
-}
