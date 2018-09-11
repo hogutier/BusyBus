@@ -9,6 +9,7 @@ body {
   width: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  line-height: 1.5;
   background-color: #ffffff;
 }
 
@@ -17,6 +18,18 @@ header {
   width: 100%;
   background-color: #1F79F9;
   justify-content: center;
+  height: 10vh;
+}
+
+
+footer {
+  display: flex;
+  width: 100%;
+  background-color: #1F79F9;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 10vh;
 }
 
 div.nav1 {
@@ -58,15 +71,23 @@ div.favorites {
   width: 100%;
   text-align: center;
   justify-content: center;
+  align-items: center;
   font-size: 2.25em;
-  margin: 30px auto;
+  margin: 30px auto 10px auto;
   color: #757575;
+  height: 5vh;
+}
+
+div > i {
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 div.list {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  margin: 10px auto;
   font-size: 1.5em;
   width: 70%;
 }
@@ -89,6 +110,13 @@ h3 {
 .items {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #C8C7CC;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.bottom-nav {
+  font-size: 3.4em;
 }
 
 
