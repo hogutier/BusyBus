@@ -15,15 +15,23 @@ body {
 
 header {
   display: flex;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #1F79F9;
   justify-content: center;
   height: 10vh;
+  position: fixed;
+  z-index: 10;
 }
 
 
 footer {
   display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
   width: 100%;
   background-color: #1F79F9;
   justify-content: space-around;
@@ -68,6 +76,9 @@ div.nav3 {
 
 div.favorites {
   display: flex;
+  position: fixed;
+  background-color: white;
+  top: 90px;
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -75,7 +86,8 @@ div.favorites {
   font-size: 2.25em;
   margin: 30px auto 10px auto;
   color: #757575;
-  height: 5vh;
+  height: 10vh;
+  z-index: 10;
 }
 
 div > i {
@@ -86,6 +98,8 @@ div > i {
 
 div.list {
   display: flex;
+  position: relative;
+  top: 250px;
   flex-direction: column;
   margin: 10px auto;
   font-size: 1.5em;
