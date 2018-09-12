@@ -14,17 +14,39 @@
 </head>
 
 <body>
-  <header>
-    <div class="nav nav1">
-      <i class="fas fa-chevron-left"></i>
-    </div>
-    <div class="nav nav2">
-      <h1>
-        Washington & State
-      </h1>
-    </div>
-    <div class="nav nav3"></div>
+  <!--
+      <div class="statusbar">
+    <img src="images/statusbar.png" alt="statusbar">
+
+      <header>
+    <div class="statusbar">
+
   </header>
+  </div>
+  -->
+
+  <header>
+    <div>
+      <img src="images/statusbar.png" alt="statusbar">
+    </div>
+    <nav>
+
+
+      <div class="nav1">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="nav2">
+        <h1>
+          Washington & State
+        </h1>
+      </div>
+      <div class="nav3"></div>
+    </nav>
+  </header>
+
+
+
+
 
   <div class="favorites">
     <i class="far fa-star"></i><span>
@@ -37,10 +59,14 @@
   <div class="list">
     <h3>Eastbound</h3>
     <div class="items">
-      <div>
-        <p>Line 60 - To Randolph/Harbor Dr </p>
-        <p>Real time ETA 07:00 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 60 - To Randolph/Harbor Dr </h5>
+        </li>
+        <li>
+          <p class="sub">Real time ETA 07:00 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -50,8 +76,14 @@
 
     <div class="items">
       <div>
-        <p>Line 124 - To Navy Pier</p>
-        <p>Real time ETA 07:10 hrs</p>
+        <ul>
+          <li>
+            <h5>Line 124 - To Navy Pier</h5>
+          </li>
+          <li>
+            <p class="sub">Real time ETA 07:10 hrs</p>
+          </li>
+        </ul>
       </div>
       <div class="chevron-right">
         <span>
@@ -60,11 +92,17 @@
       </div>
     </div>
 
+
+
     <div class="items">
-      <div>
-        <p>Line 60 - To Randolph/Harbor Dr </p>
-        <p>Real time ETA 07:20 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 60 - To Randolph/Harbor Dr </h5>
+        </li>
+        <li>
+          <p class="sub">Real time ETA 07:20 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -73,10 +111,14 @@
     </div>
 
     <div class="items">
-      <div>
-        <p>Line 124 - To Navy Pier</p>
-        <p>Real time ETA 07:20 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 124 - To Navy Pier</h5>
+        </li>
+        <li>
+          <p class="sub">Real time ETA 07:20 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -86,10 +128,14 @@
 
     <h3>Northbound</h3>
     <div class="items">
-      <div>
-        <p>Line 151 - To Devon/Clark</p>
-        <p>Real time ETA 07:16 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 151 - To Devon/Clark</h5>
+        </li>
+        <li>
+          <p class="sub">Real time ETA 07:16 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -98,10 +144,14 @@
     </div>
 
     <div class="items">
-      <div>
-        <p>Line 151 - To Devon/Clark</p>
-        <p>Real time ETA 07:32 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 151 - To Devon/Clark</h5>
+        </li>
+        <li>
+          <p class="sub">Real time ETA 07:32 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -111,10 +161,14 @@
 
     <h3>Southbound</h3>
     <div class="items">
-      <div>
-        <p>Line J14 - To 103rd/Stony Island</p>
-        <p>Real time ETA 07:15 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line J14 - To 103rd/Stony Island</h5>
+        </li>
+        <li>
+          <p class="sub">Real time ETA 07:15 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -123,10 +177,14 @@
     </div>
 
     <div class="items">
-      <div>
-        <p>Line 124 - To Navy Pier</p>
-        <p>Real time ETA 07:10 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 124 - To Navy Pier</h5>
+        </li>
+        <li>
+          <p class="sub">Real time ETA 07:10 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -136,9 +194,11 @@
 
     <h3>Reroute</h3>
     <div class="items">
-      <div>
-        <p>Line 6x - To Jackson Park Express</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 6x - To Jackson Park Express</h5>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -148,10 +208,14 @@
 
     <h3>Out of Service</h3>
     <div class="items">
-      <div>
-        <p>Line 4 - To Cottage Grove</p>
-        <p>Resumes at 00:10 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 4 - To Cottage Grove</h5>
+        </li>
+        <li>
+          <p class="sub">Resumes at 00:10 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -159,10 +223,14 @@
       </div>
     </div>
     <div class="items">
-      <div>
-        <p>Line 20 - To Madison</p>
-        <p>Resumes at 00:10 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 20 - To Madison</h5>
+        </li>
+        <li>
+          <p class="sub">Resumes at 00:10 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
@@ -170,17 +238,20 @@
       </div>
     </div>
     <div class="items">
-      <div>
-        <p>Line 157 - To Streetville/Taylor</p>
-        <p>Resumes at 06:00 hrs</p>
-      </div>
+      <ul>
+        <li>
+          <h5>Line 157 - To Streetville/Taylor</h5>
+        </li>
+        <li>
+          <p class="sub">Resumes at 06:00 hrs</p>
+        </li>
+      </ul>
       <div class="chevron-right">
         <span>
           <i class="fas fa-chevron-right"></i>
         </span>
       </div>
     </div>
-
   </div>
 
   <footer>
