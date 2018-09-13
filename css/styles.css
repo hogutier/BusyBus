@@ -7,30 +7,43 @@
 html {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 body {
-  display: block;
-  width: 75%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  justify-content: center;
+  align-items: center;
   line-height: 1.5;
   background-color: #ffffff;
 }
 
 header {
   display: flex;
-  top: 0;
-  left: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: #1F79F9;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 500;
+  margin-top: 0px;
+
+}
+
+nav {
+  display: flex;
   width: 100%;
   background-color: #1F79F9;
   justify-content: center;
   align-items: center;
   height: 10vh;
   position: fixed;
-  z-index: 10;
+  margin-top: 10px;
 }
-
 
 footer {
   display: flex;
@@ -46,7 +59,25 @@ footer {
   height: 10vh;
 }
 
-div.nav1 {
+.statusbar {
+  background-image: url("images/statusbar.png");
+  position: fixed;
+  background-size: cover;
+  background-position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3vh;
+  z-index: 200;
+  margin-top: -5px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav1 {
   width: 10%;
   margin: 30px;
   color: #ffffff;
@@ -57,7 +88,7 @@ div.nav1 {
   text-align: center;
 }
 
-div.nav2 {
+.nav2 {
   width: 80%;
   margin: 20px;
   color: #ffffff;
@@ -69,7 +100,7 @@ div.nav2 {
   text-align: center;
 }
 
-div.nav3 {
+.nav3 {
   width: 10%;
   margin: 20px;
   color: #ffffff;
@@ -80,21 +111,18 @@ div.nav3 {
   text-align: center;
 }
 
-div.favorites {
+.favorites {
   display: flex;
-  position: fixed;
+  width: 100%;
+  height: 7vh;
   background-color: white;
-  top: 60px;
-  left: 0px;
   width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 2.25em;
-  margin: 30px auto 10px auto;
+  margin: 20px auto 10px auto;
   color: #757575;
-  height: 10vh;
-  z-index: 10;
 }
 
 .favh2 {
@@ -108,14 +136,12 @@ div > i {
   margin-bottom: 20px;
 }
 
-div.list {
+.list {
   display: flex;
-  position: relative;
-  top: 250px;
   flex-direction: column;
   margin: 10px auto;
   font-size: 1.5em;
-  width: 70%;
+  width: 75%;
 }
 
 span {
@@ -126,6 +152,10 @@ h3 {
   font-weight: bold;
   font-size: 1.25em;
   margin: 10px 0;
+}
+
+h5 {
+  font-size: 1em;
 }
 
 .chevron-right {
@@ -139,22 +169,41 @@ h3 {
   border-bottom: 1px solid #C8C7CC;
   margin-bottom: 10px;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .bottom-nav {
   font-size: 3.4em;
 }
 
-/* Laptop screens and larger */
+.sub {
+  font-size: .75em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tablet screens */
 @media screen and (max-width: 991px) {
-  div.nav {
-    font-size: 2.25em;
+  body {
+    width: 100%;
   }
-  div.favorites {
+
+  nav, .nav1, .nav2, .nav3 {
+    font-size: 1.5em;
+  }
+
+
+  .favorites {
     font-size: 1.5em;
     top: 60px;
+    margin: 10px auto;
+    padding: 10px;
   }
-  div.list {
+  .list {
     font-size: 1.25em;
     width: 90%;
   }
@@ -163,25 +212,25 @@ h3 {
   }
 }
 
-/* Tablet screens and larger */
+/* Smartphone screens */
 @media screen and (max-width: 575px) {
   body {
-    width: 90%
+    width: 100%;
   }
-  div.nav {
-    font-size: 1.75em;
+  nav, .nav1, .nav2, .nav3 {
+    font-size: 1em;
   }
-  div.favorites {
-    font-size: 1.5em;
+  .favorites {
+    font-size: 1em;
     top: 60px;
+    margin: 10px auto;
+    padding: 10px;
   }
-  div.list {
+  .list {
     font-size: 1em;
     width: 90%;
   }
   .bottom-nav {
-    font-size: 1.75em;
+    font-size: 1.25em;
   }
-
-
-
+}
