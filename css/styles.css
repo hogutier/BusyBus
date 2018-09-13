@@ -229,6 +229,7 @@ ul {
   .list {
     font-size: 1em;
     width: 90%;
+    padding-bottom: 55px;
   }
   .bottom-nav {
     font-size: 1.1em;
