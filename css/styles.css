@@ -218,7 +218,7 @@ ul {
     width: 100%;
   }
   nav, .nav1, .nav2, .nav3 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .favorites {
     font-size: 1em;
@@ -231,6 +231,6 @@ ul {
     width: 90%;
   }
   .bottom-nav {
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
 }
