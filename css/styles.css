@@ -29,8 +29,8 @@ header {
   background-color: #1F79F9;
   justify-content: center;
   flex-direction: column;
-  z-index: 200;
-  margin-top: 5px;
+  z-index: 500;
+  margin-top: 0px;
 
 }
 
@@ -231,6 +231,6 @@ ul {
     width: 90%;
   }
   .bottom-nav {
-    font-size: 1em;
+    font-size: 1.25em;
   }
 }
