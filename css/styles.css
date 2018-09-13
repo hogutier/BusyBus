@@ -30,7 +30,7 @@ header {
   justify-content: center;
   flex-direction: column;
   z-index: 200;
-  margin-top: 10px;
+  margin-top: 5px;
 
 }
 
@@ -63,12 +63,13 @@ footer {
   background-image: url("images/statusbar.png");
   position: fixed;
   background-size: cover;
-  background-position: absolute;
+  background-position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 3vh;
   z-index: 200;
+  margin-top: -5px;
 }
 
 img {
@@ -135,7 +136,7 @@ div > i {
   margin-bottom: 20px;
 }
 
-div.list {
+.list {
   display: flex;
   flex-direction: column;
   margin: 10px auto;
@@ -217,7 +218,7 @@ ul {
     width: 100%;
   }
   nav, .nav1, .nav2, .nav3 {
-    font-size: 1.25em;
+    font-size: 1em;
   }
   .favorites {
     font-size: 1em;
@@ -225,11 +226,11 @@ ul {
     margin: 10px auto;
     padding: 10px;
   }
-  div.list {
+  .list {
     font-size: 1em;
     width: 90%;
   }
   .bottom-nav {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 }
